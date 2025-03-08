@@ -48,5 +48,5 @@ with open(html_path, "r", encoding="utf-8") as f:
     html_content = f.read().replace('styles.css', f"file:///{css_path}")
 
 # Tworzenie okna PyWebview z określoną rozdzielczością
-webview.create_window("Analiza Transakcji", html=html_content, js_api=api, width=1280, height=720)
+webview.create_window("Analiza Transakcji", html=html_content, js_api=api, width=900, height=500)
 webview.start()
